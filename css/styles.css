@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.require {
+  color: #ce0505;
+}
+
+.btn {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn-outline {
+  background: none;
+}
+
+.btn-outline.btn-info {
+  color: #5bc0de;
+}
+
+.btn-outline.btn-info:hover {
+  color: #fff;
+}
+
+html, body {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+body {
+  background: #f9f9f9;
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+}
+
+body #wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #wrapper.menuDisplayed {
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+body #wrapper.menuDisplayed #sidebar-wrapper {
+  width: 0px;
+}
+
+body #wrapper.menuDisplayed #page-content-wrapper {
+  padding-left: 1px;
+}
+
+body #wrapper #sidebar-wrapper {
+  z-index: 1;
+  position: fixed;
+  width: 275px;
+  height: auto;
+  min-height: 100vh;
+  overflow-y: hidden;
+  background: #3a3a3a;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav {
+  padding: 0;
+  list-style: none;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .logo {
+  padding: 2rem;
+  text-align: center;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .logo a:hover {
+  background: none !important;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .name-profile {
+  width: 80%;
+  height: auto;
+  background: #2b2b2b;
+  margin: auto;
+  border-radius: 5px;
+  border: 2px solid #000000;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .name-profile .contain {
+  padding: 1%;
+  text-align: center;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .name-profile .contain #name__profile {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .links {
+  padding: 5% 0;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .links li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .links li a {
+  display: block;
+  text-decoration: none;
+  color: #ddd;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+  padding: 2% 0;
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .links li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body #wrapper #sidebar-wrapper .sidebar-nav .links li a img, body #wrapper #sidebar-wrapper .sidebar-nav .links li a span {
+  padding: 0 3%;
+}
+
+body #wrapper #page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 0 0 0 275px;
+}
+
+body #wrapper #page-content-wrapper .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 header .header-top {
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 30px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 header .header-top #menu-toggle {
+  display: none;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main {
+  width: 100%;
+  padding: 1%;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main .row .col-12 .cards {
+  padding: 2%;
+  width: 70%;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main .row .col-12 .cards form .panel .panel-heading {
+  padding: 2%;
+  font-size: 1rem;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main .row .col-12 .cards form .panel .panel-body p {
+  padding: 2% 0;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main .row .col-12 .cards form .panel .panel-body .form-group .input-group {
+  width: calc(40% - 1%);
+  margin: 2% 5% 2% 1%;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main .row .col-12 .cards form .panel .panel-body .form-group .input-group input {
+  padding: 20px !important;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 main .row .col-12 .cards form .submit-buttons button {
+  letter-spacing: 2px;
+  width: 100px;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 footer {
+  width: 100%;
+  height: 75px;
+  background: rgba(0, 0, 0, 0.03);
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 footer .copyright {
+  padding: 0 1%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 footer .copyright .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #wrapper #page-content-wrapper .container-fluid .row .col-lg-12 footer .copyright .right div {
+  margin: 0 40px 0 0;
+}
+/*# sourceMappingURL=styles.css.map */
